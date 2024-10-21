@@ -5,13 +5,12 @@ const port = 3000;
 // Главный маршрут
 app.get('/', (req, res) => {
     res.send('Hello from both branches!!1');
-    res.send('Hello Rakendus');
 });
 
 // Динамическое приветствие
 app.get('/hello', (req, res) => {
     const name = req.query.name || 'World';
-    res.send(`Hello, ${name}`);
+   res.send(`Hello, ${name}!`);
 });
 
 // Запуск сервера
