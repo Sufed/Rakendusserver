@@ -4,7 +4,7 @@ const port = 3000;
 
 // Главный маршрут
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Hello from the main branch!');
 });
 
 // Динамическое приветствие
